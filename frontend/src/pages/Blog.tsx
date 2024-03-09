@@ -1,7 +1,7 @@
-import React from 'react'
-
+import { useParams } from "react-router-dom"
 export const Blog = () => {
+  const params = useParams();
   return (
-    <div>Blog</div>
+    <div>{params.id}</div>
   )
 }
