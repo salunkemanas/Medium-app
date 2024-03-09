@@ -1,5 +1,5 @@
 import { Hono } from 'hono';
-import { sign,verify } from 'hono/jwt';
+import { cors } from 'hono/cors';
 import { userRouter } from './rotues/user';
 import { blogRouter } from './rotues/blog';
 
@@ -14,7 +14,7 @@ const app = new Hono<{
 }>()
 // wrangler.toml me secrets rakhte hai
 // c here is context which contains req, res, env variabels etc, almost everything
-
+app.use("/*", cors())
 app.route("/api/v1/user", userRouter);
 app.route("/api/v1/blog", blogRouter);
 
