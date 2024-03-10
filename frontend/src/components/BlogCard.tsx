@@ -25,14 +25,14 @@ export const BlogCard = ({authorName, title, content, publishedDate, id}: BlogCa
             {content.substring(1,100) + "..."}
         </div>
         <div className="w-full text-slate-500 text-sm font-thin pt-4">
-            {`${Math.ceil(content.length/100)} minute(s) read`}
+            {`${Math.ceil(content.length/500)} minute(s) read`}
         </div>
         {/* <div className="w-full h-1 bg-slate-200"></div> */}
     </div>
     </Link>
   )
 }
-function Circle(){
+export function Circle(){
     return <div className="rounded-full w-1 h-1 bg-slate-600">
     </div>
 }
