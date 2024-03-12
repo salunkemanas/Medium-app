@@ -21,7 +21,7 @@ export const FullBlog = ({blog}:{blog:Blog}) => {
                         </div>
                         <div>
                             <div className="text-xl font-bold">{blog.author.name || "Anonymous"}</div>
-                            <div className="text-slate-500 pt-2">Random catch phrase by the author</div>
+                            <div className="text-slate-500 pt-2">Jester of Joviality, Purveyor of Puns, and the Realm's Supreme Sire of Snickers</div>
                         </div>
                     </div>
                 </div>
